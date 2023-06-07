@@ -66,7 +66,24 @@ $(document).ready(function($) {
 		$(".search-input-two").fadeOut(300);
 	});
 	// Search Form JS End
-
+	// Toggle Menu Mobile JS Two
+	$(".toggle-button-two").on( 'click', function(){
+		$(".main-navigation-two").toggleClass('toggle-menu-two');
+		$(".header-menu-two .black-shadow-two").fadeToggle();
+	});
+	$(".main-navigation-two ul li a").on( 'click', function(){
+		$(".main-navigation-two").removeClass('toggle-menu-two');
+		$(".header-menu-two .black-shadow-two").fadeOut();
+	});
+	$(".main-navigation-two ul li.sub-items-two>a").on( 'click', function(){
+		$(".main-navigation-two").addClass('toggle-menu-two');
+		$(".header-menu-two .black-shadow-two").stop();
+	});
+	$(".header-menu-two .black-shadow-two").on( 'click', function(){
+		$(this).fadeOut();
+		$(".main-navigation-two").removeClass('toggle-menu-two');
+	});
+	// Toggle Menu Mobile JS End
 
 	      // Smooth scrolling on the navbar links
 		     // Navigation active state on scroll
