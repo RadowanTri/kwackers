@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Kwackers</title>
+    <meta name="keywords" content="Kwackers" />
+    <meta name="description" content="Kwackers" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- FavIcon CSS -->
+    <link rel="icon" href="assets/images/favicon2.png" type="image/gif" sizes="16x16">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!--Google Fonts CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome Icon CSS-->
+    <!--Font Awesome Icon CSS-->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css">
+    <!-- Slick Slider CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.min.css">
+
+    <!-- Wow Animation CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
+
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.min.css">
+
+    <!-- Main Style CSS  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+
+    <script>
+
+      var number = [1,2,3];
+      var result =[];
+      for(let i=0; i<number.length; i++){
+        result.push(number[i] * 2);
+      }
+      console.log(result);
+      var number = [1,2,3];
+      var result =number.map((number) =>  number * 2);
+      console.log(result);
+      var players =[
+        {
+          name:'tamim',
+          avg:38
+        },
+        {
+          name:'mos',
+          avg:38
+        },
+        {
+          name:'sakib',
+          avg:36
+        },
+        {
+          name:'sakibas',
+          avg:38
+        },
+      ];
+      var playersUpadate =[];
+      for ( let i =0; i<players.length; i++) {
+        if (players[i].avg >= 37){
+          playersUpadate.push(players[i]);
+        }
+      }
+      console.log(playersUpadate);
+    </script>
+
+</body>
+
+</html>
